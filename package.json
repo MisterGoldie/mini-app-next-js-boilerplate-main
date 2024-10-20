@@ -1,0 +1,56 @@
+{
+  "name": "mini-app-next-js-boilerplate",
+  "version": "0.1.0",
+  "keywords": [
+    "next.js",
+    "farcaster",
+    "composer action",
+    "categorically large",
+    "large",
+    "mini-apps"
+  ],
+  "description": "A Farcaster Mini App game using Next.js",
+  "license": "MIT",
+  "author": "Categorically Large Team <categoricallylarge@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dev:ngrok": "npx ngrok http 3000",
+    "clean": "rm -rf .next && rm -rf node_modules/.cache"
+  },
+  "dependencies": {
+    "@farcaster/auth-kit": "^0.6.0",
+    "@headlessui/react": "^2.1.10",
+    "@neynar/nodejs-sdk": "^1.63.0",
+    "@react-three/drei": "^9.114.6",
+    "@react-three/fiber": "^8.17.10",
+    "axios": "^1.7.7",
+    "crypto-js": "^4.2.0",
+    "next": "^14.2.15",
+    "next-auth": "^4.24.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "three": "^0.169.0",
+    "use-sound": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^20",
+    "@types/qrcode-terminal": "^0.12.2",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18",
+    "@types/three": "^0.169.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.12.0",
+    "eslint-config-next": "14.2.7",
+    "ngrok": "^5.0.0-beta.2",
+    "postcss": "^8.4.47",
+    "qrcode-terminal": "^0.12.0",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5"
+  }
+}

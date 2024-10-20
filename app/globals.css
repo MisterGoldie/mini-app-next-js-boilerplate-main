@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* eslint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* eslint-enable */
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Frijole', cursive;
+}
+
+/* Ensure all text uses the Frijole font */
+* {
+  font-family: 'Frijole', cursive !important;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.text-shadow-custom {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Set input font size to 16px to prevent zoom */
+input, textarea, select {
+  font-size: 16px;
+}
+
+/* Optional: Fix for full width on iOS safari */
+input[type="text"] {
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+/* Prevent focus scaling on input */
+body {
+  touch-action: manipulation;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+input, textarea {
+  outline: none;
+  -webkit-text-size-adjust: 100%; /* Prevent text scaling */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-slate-800/20 rounded-2xl z-[100]
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-[#8667D2] rounded-full cursor-pointer z-[100]
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#BAA2F3] cursor-pointer
+}

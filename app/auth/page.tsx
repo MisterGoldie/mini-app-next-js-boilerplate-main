@@ -1,6 +1,6 @@
 'use client'
 
-import SIFC from "@/components/SIFC"
+import SIFC from '../../components/SIFC'
 import { useSession } from "next-auth/react"
 import { useLayoutEffect } from "react"
 import { useRouter } from "next/navigation"

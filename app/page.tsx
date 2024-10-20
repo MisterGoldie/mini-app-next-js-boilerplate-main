@@ -1,8 +1,8 @@
 'use client'
 
 import PageWrapper from "@/components/layout/PageWrapper"
-import SIFC from "@/components/SIFC"
-import FarcasterShare from "@/components/FarcasterShare"
+import SIFC from "../components/SIFC"
+import FarcasterShare from '../components/FarcasterShare'
 import { useUserContext } from "@/context/UserContext"
 import Image from 'next/image'
 

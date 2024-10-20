@@ -42,7 +42,6 @@ export default function FarcasterShare({ message, embeds, customClass, children 
             )}
         </>
     )
-
     return (
         <>
             {!isMini ? (
